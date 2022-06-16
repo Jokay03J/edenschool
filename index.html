@@ -1,75 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+  <head>
+    <title>Eden school</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/jpg" href="Visuel/logo_EdenSchool.png" />
+  </head>
 
-<head>
-  <title>Eden school</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="icon" type="image/jpg" href="Visuel/logo_EdenSchool.png">
-</head>
-
-<body class="body">
-  <header>
-    <nav class="navbar">
-      <img src="Visuel/logo_EdenSchool.png" class="navbar-logo" />
-      <div class="navbar-items-container">
-        <div><a href="#presentation" class="navbar-items">MA PRESENTATION</a></div>
-        <div><a class="navbar-items" href="#projects">MES PROJETS</a></div>
-        <div class="navbar-items">MON PARCOURS</div>
-        <div class="navbar-items">MES INTERETS</div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="presentation">
-      <div class="bandeau">
-        <div class="bandeau-title">EDEN School</div>
-        <div class="bandeau-subtitle">PROMOTION 2022-2023</div>
-      </div>
-      <div class="name" id="presentation">
-        <div class="name-container">
-          <div class="name-title">JOAN<br />MAGRO</div>
-          <div class="name-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin est est, vestibulum
-            nec augue quis, convallis dictum libero. Nam aliquet tristique vestibulum. Integer interdum arcu id dolor
-            ultricies pharetra. Quisque auctor sodales lectus, venenatis aliquet odio.</div>
+  <body class="body">
+    <header>
+      <nav class="navbar">
+        <img src="Visuel/logo_EdenSchool.png" class="navbar-logo" />
+        <div class="navbar-items-container">
+          <div>
+            <a href="#presentation" class="navbar-items">MA PRESENTATION</a>
+          </div>
+          <div><a class="navbar-items" href="#projects">MES PROJETS</a></div>
+          <div><a class="navbar-items" href="#parcours">MON PARCOURS</a></div>
+          <div><a class="navbar-items" href="#interets">MES INTÉRÊTS</a></div>
         </div>
-        <div class="photo">votre photo</div>
+      </nav>
+    </header>
+    <main>
+      <div class="presentation">
+        <div class="bandeau">
+          <div class="bandeau-title">EDEN School</div>
+          <div class="bandeau-subtitle">PROMOTION 2022-2023</div>
+        </div>
+        <div class="name" id="presentation">
+          <div class="name-container">
+            <div class="name-title">JOAN<br />MAGRO</div>
+            <div class="name-subtitle">
+              J'ai 15 ans, j'ai commencé à développer à 11 ans et depuis je
+              n'arrête pas d'apprendre de nouvelles technologies et j'adore ça !
+            </div>
+          </div>
+          <div class="photo"></div>
+        </div>
       </div>
-    </div>
-    <div class="qualities-container">
-      <div class="citation">"Cookie : Anciennement petit gâteau sucré, qu'on acceptait avec plaisir. Aujourd'hui : petit
-        fichier informatique drôlement salé, qu'il faut refuser avec véhémence."</div>
-      <div class="qualities">
-        <div class="qualities-items"><span class="qualities-number">01</span>CURIEUX</div>
-        <div class="qualities-items"><span class="qualities-number">02</span>DÉTERMINER</div>
-        <div class="qualities-items"><span class="qualities-number">03</span>PASSIONÉ</div>
-      </div>
-    </div>
-    <div class="projects" id="projects">
-      <div class="projects-container">
-        <div class="projects-containers-title">MES PROJETS</div>
-        <div class="projects-items-container">
-          <div class="projects-item">
-            <div class="projects-items-title">Frigostock</div>
-            <div class="projects-items-subtitle">une applications pour gérée ton frigo,congélateur et ton étagère depuis
-              ton
-              smartphone partout !</div>
+      <div class="qualities-container">
+        <div class="citation-container">
+          <div class="citation">
+            "Cookie : Anciennement petit gâteau sucré, qu'on acceptait avec
+            plaisir. Aujourd'hui : petit fichier informatique drôlement salé,
+            qu'il faut refuser avec véhémence."
           </div>
-          <div class="projects-item">
-            <div class="projects-items-title">jokay03j.tk</div>
-            <div class="projects-items-subtitle"></div>
+        </div>
+        <div class="qualities">
+          <div class="qualities-items">
+            <span class="qualities-number">01</span>CURIEUX
           </div>
-          <div class="projects-item">
-            <div class="projects-items-title">embedgenerator</div>
-            <div class="projects-items-subtitle"></div>
+          <div class="qualities-items">
+            <span class="qualities-number">02</span>DÉTERMINÉ
           </div>
-          <div class="projects-item">
-            <div class="projects-items-title">Frigostock</div>
-            <div class="projects-items-subtitle"></div>
+          <div class="qualities-items">
+            <span class="qualities-number">03</span>PASSIONNÉ
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+      <div class="projects" id="projects">
+        <div class="project-title">MES PROJETS</div>
+        <div class="project-list-container">
+          <div class="project-item" id="frigostock-container">
+            <div class="project-item-title" id="frigostock-title">
+              FRIGOSTOCK
+            </div>
+            <div class="project-item-subtitle" id="frigostock-subtitle">
+              gère ton frigo, congélateur et ton étagère partout !
+            </div>
+          </div>
+          <div class="project-item" id="jokay03j-container">
+            <div class="project-item-title" id="jokay03j-title">
+              JOKAY03J.TK
+            </div>
+            <div class="project-item-subtitle" id="jokay03j-subtitle">
+              mon blog et montrer mes projets
+            </div>
+          </div>
+          <div class="project-item" id="embedgenerator-container">
+            <div class="project-item-title" id="embedgenerator-title">
+              EMBEDGENERATOR
+            </div>
+            <div class="project-item-subtitle" id="embedgenerator-subtitle">
+              paquet npm qui permet de convertir un lien en widget
+            </div>
+          </div>
+          <div class="project-item" id="justdev-container">
+            <div class="project-item-title" id="justdev-title">JUSTDEV</div>
+            <div class="project-item-subtitle" id="justdev-subtitle">
+              modérateur sur un serveur discord qui s'appelle "justdev"
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parcours" id="parcours">
+        <div class="parcours-title">MON PARCOURS</div>
+        <div class="parcours-item">
+          <div class="parcours-years">2022</div>
+          <div class="parcours-container">
+            <div class="parcours-item-title">STAGE AXOPEN</div>
+            <div class="parcours-item-description">
+              ce stage a duré 1 semaine.
+            </div>
+          </div>
+        </div>
+        <div class="parcours-item">
+          <div class="parcours-years">2022</div>
+          <div class="parcours-container">
+            <div class="parcours-item-title">ÉTUDE</div>
+            <div class="parcours-item-description">mon année de 3eme.</div>
+          </div>
+        </div>
+        <div class="parcours-item">
+          <div class="parcours-years">2021</div>
+          <div class="parcours-container">
+            <div class="parcours-item-title">ÉTUDE</div>
+            <div class="parcours-item-description">mon année de 4eme.</div>
+          </div>
+        </div>
+      </div>
+      <div class="interets" id="interets">
+        <div class="interets-title">MES INTÉRÊTS</div>
+        <div class="interets-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor
+          risus, finibus quis scelerisque non, ultrices eget nunc. Interdum et
+          malesuada fames ac ante ipsum primis in faucibus. Aliquam in aliquet
+          est, in aliquam orci.
+        </div>
+        <div class="container">
+          <div class="interets-items">
+            <div class="interets-item-container">
+              <div class="interets-item-title">PROGRAMATION</div>
+            </div>
+          </div>
+          <div class="interets-items">
+            <div class="interets-item-container">
+              <div class="interets-item-title">JEUX VIDEO</div>
+            </div>
+          </div>
+          <div class="interets-items">
+            <div class="interets-item-container">
+              <div class="interets-item-title">ANIMER</div>
+            </div>
+          </div>
+          <div class="interets-items">
+            <div class="interets-item-container">
+              <div class="interets-item-title">SPORT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-edenschool">
+        <div class="why-edenschool-title">POURQUOI EDEN SCHOOL ?</div>
+        <div class="why-edenschool-description-container">
+          <div class="why-edenschool-description">
+            Eden School est l'école de mes rêves, j'adore développer et crée
+            quelque chose depuis rien ! je sais sûr que cette école me plaira
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="Visuel/logo_EdenSchool.png" class="footer-logo" />
+      <div class="footer-text">
+        ÉCOLE DE FORMATION AU MÉTIER DE DEVELOPPEUR•SE WEB ET MOBILE POUR LES
+        MOINS DE 18 ANS
+      </div>
+    </footer>
+  </body>
 </html>
