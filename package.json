@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "ws --log.format dev"
+    "dev": "ws --log.format dev"
   },
   "repository": {
     "type": "git",
