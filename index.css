@@ -13,6 +13,8 @@
   padding: 0px;
 }
 
+/* navbar css */
+
 .navbar {
   width: 100%;
   height: 110px;
@@ -41,17 +43,19 @@
 }
 
 .navbar-items:hover {
-  color: rgba(127, 192, 191, 255)
+  color: rgba(127, 192, 191, 255);
 }
 
 .selected {
   color: rgba(127, 192, 191, 255);
 }
 
+/* bandeau category css */
+
 .bandeau {
   width: 100%;
   height: 850px;
-  background: url("Visuel/bandeau.jpg") fixed;
+  background: url("Visuel/bandeau.jpg") fixed no-repeat;
 }
 
 .bandeau-title {
@@ -71,14 +75,16 @@
   justify-content: center;
 }
 
+/* presentation category css */
+
 .name {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .name-container {
   width: 400px;
   height: 600px;
+  margin-left: 250px;
 }
 
 .name-title {
@@ -108,27 +114,33 @@
   font-family: Text;
   display: flex;
   justify-content: center;
+  margin-left: 250px;
 }
 
-.qualities-container {
-  width: 100%;
-  height: 600px;
-  display: table;
-}
-
-.citation {
+.citation-container {
   height: 600px;
   width: 50%;
   background: rgba(124, 188, 186, 255);
   font-size: 20px;
   color: white;
   font-family: "Subtitle";
-  text-align: right;
   padding-right: 50px;
   padding-left: 10px;
   display: table-cell;
   vertical-align: middle;
   font-weight: bold;
+}
+
+.citation {
+  margin-left: 250px;
+}
+
+/* qualities category css */
+
+.qualities-container {
+  width: 100%;
+  height: 600px;
+  display: table;
 }
 
 .qualities {
@@ -138,7 +150,7 @@
   display: table-cell;
   vertical-align: middle;
   padding-left: 150px;
-  background: rgba(247,246,246,255);
+  background: rgba(247, 246, 246, 255);
 }
 
 .qualities-number {
@@ -155,41 +167,278 @@
   margin-bottom: 25px;
 }
 
+/* projects category css */
+
 .projects {
-  width: 100%;
   height: 600px;
-  display: table;
+  margin-left: 250px;
+  margin-right: 320px;
 }
 
-.projects-container {
-  width: 100%;
-  height: 600px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.projects-containers-title {
+.project-title {
   font-family: "Text";
   font-size: 50px;
+  color: rgba(49, 48, 50, 255);
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.project-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  grid-auto-rows: minmax(290px, auto);
+  position: relative;
+}
+
+.project-item {
+  background: rgba(113, 115, 129, 255);
+}
+
+.project-item:hover {
+  background: rgba(127, 192, 191, 255);
+}
+
+.project-item:hover + .project-item-subtitle {
+  display: block;
+}
+
+.project-item-title {
+  color: white;
+  z-index: 99;
+  font-family: "Text";
+  display: none;
+}
+
+.project-item-subtitle {
+  display: none;
+}
+
+#frigostock-container {
+  background: url("Visuel/frigostock.png") rgba(113, 115, 129, 255) center
+    no-repeat;
+}
+
+#frigostock-container:hover {
+  background: rgba(125, 189, 186, 255);
+}
+
+.project-item:hover #frigostock-title + #frigostock-subtitle {
+  display: flex;
+  color: white;
+  font-family: "Text";
+  justify-content: center;
+}
+
+.project-item:hover #frigostock-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+#embedgenerator-container {
+  background: url("https://jokay03j.github.io/embedGenerator/img/logo.png")
+    rgba(113, 115, 129, 255) center no-repeat;
+}
+
+#embedgenerator-container:hover {
+  background: rgba(125, 189, 186, 255);
+}
+
+.project-item:hover #embedgenerator-title + #embedgenerator-subtitle {
+  display: flex;
+  color: white;
+  font-family: "Text";
+  justify-content: center;
+}
+
+.project-item:hover #embedgenerator-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+#jokay03j-container {
+  background: url("Visuel/jokay03j.png") rgba(113, 115, 129, 255) center
+    no-repeat;
+}
+
+#jokay03j-container:hover {
+  background: rgba(125, 189, 186, 255);
+}
+
+.project-item:hover #jokay03j-title + #jokay03j-subtitle {
+  display: flex;
+  color: white;
+  font-family: "Text";
+  justify-content: center;
+}
+
+.project-item:hover #jokay03j-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+#justdev-container {
+  background: url("Visuel/justdev.png") rgba(113, 115, 129, 255) center
+    no-repeat;
+}
+
+#justdev-container:hover {
+  background: rgba(125, 189, 186, 255);
+}
+
+.project-item:hover #justdev-title + #justdev-subtitle {
+  display: flex;
+  color: white;
+  font-family: "Text";
+  justify-content: center;
+}
+
+.project-item:hover #justdev-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+/* parcours category css */
+
+.parcours {
+  margin-left: 250px;
+  margin-bottom: 100px;
+  font-family: "Text";
+}
+
+.parcours-title {
+  font-family: "Text";
+  font-size: 50px;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  color: rgba(49, 48, 50, 255);
+}
+
+.parcours-years {
+  color: rgba(120, 190, 189, 255);
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.parcours-item {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.parcours-item-title {
+  font-size: 20px;
+}
+
+.parcours-item-description {
+  font-size: 15px;
   color: rgba(49, 49, 51, 255);
+  font-family: "Subtitle";
+}
+
+/* interets category css */
+
+.interets {
+  background: rgba(247, 247, 247, 255);
+  width: 100%;
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.interets-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 50px;
+  font-family: "Text";
+  color: rgba(48, 48, 51, 255);
+}
+
+.interets-description {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  padding-top: 25px;
+  font-family: "Subtitle";
+  color: rgba(49, 49, 51, 255);
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.interets-items {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.interets-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 275px;
+  border: 1px solid rgba(216, 218, 224, 255);
+  background: rgba(255, 255, 255, 255);
+}
+
+.interets-item-title {
+  font-family: "Text";
+  font-size: 25px;
+  color: rgba(121, 190, 188, 255);
+}
+
+/* wy-edenschool category css */
+
+.why-edenschool-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Text";
+  font-size: 50px;
+  margin-top: 75px;
+}
+
+.why-edenschool-description {
+  display: flex;
+  justify-content: center;
+  font-family: "Subtitle";
+  font-size: 17px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.projects-item {
-  width: 300px;
-  height: 150px;
-  background-color: rgba(112,115,128,255);
+/* footer category css */
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  background: rgba(48, 49, 50, 255);
 }
 
-.projects-item:hover {
-  background-color: rgba(124,188,186,255);
+.footer-logo {
+  height: 40%;
+  margin-left: 25%;
 }
 
-.projects-items-container {
-    font-family: "Text";
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 325px);
-    grid-template-rows: repeat(2, 175px);
+.footer-text {
+  font-family: "Text";
+  font-size: 15px;
+  color: rgba(255, 255, 255, 255);
+  margin-left: 100px;
 }
