@@ -46,12 +46,52 @@ html {
   text-decoration: none;
 }
 
+@media screen and (max-width: 847px) {
+  .navbar-items {
+    font-size: 15px;
+  }
+
+  .navbar-logo {
+    width: 150px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-items {
+    display: block;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .navbar-items {
+    display: none;
+  }
+
+ 
+}
+
+.mobile-button-menu {
+  display: none;
+  position: fixed;
+}
+
 .navbar-items:hover {
   color: rgba(127, 192, 191, 255);
 }
 
 .selected {
   color: rgba(127, 192, 191, 255);
+}
+
+.menu-button-menu {
+  display: none;
+
+  @media screen and (min-width: 320px) {
+    display: block;
+    position: fixed;
+  }
 }
 
 /* bandeau category css */
@@ -77,6 +117,60 @@ html {
   color: white;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 919px) {
+  .bandeau {
+    height: 600px;
+  }
+
+  .bandeau-title {
+    font-family: "Text";
+    font-size: 125px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px; 
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .bandeau {
+    height: 600px;
+  }
+
+  .bandeau-title {
+    font-family: "Text";
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px; 
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .bandeau {
+    height: 600px;
+  }
+
+  .bandeau-title {
+    font-family: "Text";
+    font-size: 75px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px; 
+  }
+
+  .bandeau-subtitle {
+    font-family: "Subtitle";
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
 }
 
 /* presentation category css */
@@ -119,7 +213,7 @@ html {
 .photo {
   height: 300px;
   width: 300px;
-  background-color: rgba(112, 115, 128, 255);
+  background: rgba(112, 115, 128, 255) url(Visuel/photo-moi.png) no-repeat;
   margin-top: 100px;
   margin-bottom: 100px;
   color: white;
@@ -145,6 +239,13 @@ html {
 
 .citation {
   margin-left: 250px;
+}
+
+@media screen and (max-width: 630px) {
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* qualities category css */
@@ -193,6 +294,40 @@ html {
   padding: 0px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 630px) {
+  .qualities {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .citation-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 0px;
+  }
+
+  .qualities-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .qualities-items-container {
+    margin-top: 45px;
+  }
+
+  .citation {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0px;
+    margin: auto;
+  }
+
 }
 
 /* projects category css */
